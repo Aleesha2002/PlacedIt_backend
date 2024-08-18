@@ -15,7 +15,8 @@ const PostJob = () => {
   const onSubmit = (data) => {
     data.skills = selectedOptions;
     console.log(data);
-    fetch("http://localhost:5000/post-job", {
+    // fetch("http://localhost:5000/post-job", {
+    fetch("https://placed-it-offcampus-backend.vercel.app/post-job", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

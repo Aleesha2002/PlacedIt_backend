@@ -21,7 +21,8 @@ const Home = () => {
     //     setJobs(data);
     //     setIsLoading(false);
     //   });
-    fetch("http://localhost:5000/all-jobs")
+    //fetch("http://localhost:5000/all-jobs")
+    fetch("https://placed-it-offcampus-backend.vercel.app/all-jobs")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

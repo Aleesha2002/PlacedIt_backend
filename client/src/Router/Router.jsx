@@ -28,8 +28,12 @@ const Router = createBrowserRouter([
         element: <UpdateJob />,
         loader: ({ params }) =>
           //   fetch(`http://localhost:5000/all-jobs/${params.id}`),
+          // https://placedit-offcampus.onrender.com/
+          // fetch(
+          //   `https://placed-it-offcampus-backend.vercel.app/all-jobs/${params.id}`
+          // ),
           fetch(
-            `https://placed-it-offcampus-backend.vercel.app/all-jobs/${params.id}`
+            `https://placedit-offcampus.onrender.com/all-jobs/${params.id}`
           ),
       },
       {

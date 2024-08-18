@@ -22,7 +22,9 @@ const Home = () => {
     //     setIsLoading(false);
     //   });
     //fetch("http://localhost:5000/all-jobs")
-    fetch("https://placed-it-offcampus-backend.vercel.app/all-jobs")
+    // https://placedit-offcampus.onrender.com/
+    //fetch("https://placed-it-offcampus-backend.vercel.app/all-jobs")
+    fetch("https://placedit-offcampus.onrender.com/all-jobs")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

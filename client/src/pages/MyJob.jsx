@@ -9,9 +9,11 @@ const MyJob = () => {
   useEffect(() => {
     setIsLoading(true);
     // fetch(`http://localhost:5000/myJobs/tnp@iiitm.ac.in`)
-    fetch(
-      `https://placed-it-offcampus-backend.vercel.app/myJobs/tnp@iiitm.ac.in`
-    )
+    // https://placedit-offcampus.onrender.com/
+    // fetch(
+    //   `https://placed-it-offcampus-backend.vercel.app/myJobs/tnp@iiitm.ac.in`
+    // )
+    fetch(`https://placedit-offcampus.onrender.com/myJobs/tnp@iiitm.ac.in`)
       .then((res) => res.json())
       .then((data) => {
         setJobs(data);

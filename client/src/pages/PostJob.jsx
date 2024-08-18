@@ -16,7 +16,9 @@ const PostJob = () => {
     data.skills = selectedOptions;
     console.log(data);
     // fetch("http://localhost:5000/post-job", {
-    fetch("https://placed-it-offcampus-backend.vercel.app/post-job", {
+    // https://placedit-offcampus.onrender.com/
+    // fetch("https://placed-it-offcampus-backend.vercel.app/post-job", {
+    fetch("https://placedit-offcampus.onrender.com/post-job", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

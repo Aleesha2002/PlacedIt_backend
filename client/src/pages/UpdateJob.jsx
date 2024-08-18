@@ -35,7 +35,9 @@ const UpdateJob = () => {
     data.skills = selectedOptions;
     console.log(data);
     // fetch(`http://localhost:5000/update-job/:id/${id}`, {
-    fetch(`https://placed-it-offcampus-backend.vercel.app/update-job/:id/${id}`, {
+    // https://placedit-offcampus.onrender.com/
+    // fetch(`https://placed-it-offcampus-backend.vercel.app/update-job/:id/${id}`, {
+    fetch(`https://placedit-offcampus.onrender.com/update-job/:id/${id}`, {
       method: "PATCH",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),
